@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pdf-don-sac-lam-ro-chu
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: MAX_UPLOAD_MB
+        value: "50"
